@@ -76,7 +76,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.main-header {
+.top-text {
     text-align: center;
     font: normal normal normal 49px/57px Raleway;
     letter-spacing: 0;
@@ -404,16 +404,30 @@ header {
     color: #13253B;
     opacity: 1;
 }
+.pricing-list-icon::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+.pricing-list-icon-x::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Close.svg");
+}
 .pricing-amount {
     text-align: center;
     font: normal normal 300 46px/2px Open Sans;
-    letter-spacing: 0px;
     opacity: 1;
 }
 .pricing-box ul{
     text-align: center;
     font: normal normal normal 14px/41px Open Sans;
-    letter-spacing: 0px;
     opacity: 1;
 }
 .pricing-button {
@@ -423,7 +437,6 @@ header {
     opacity: 1;
     text-align: center;
     font: normal normal bold 13px/41px Open Sans;
-    letter-spacing: 0px;
     color: #FFFFFF;
     text-decoration: none;
     position: absolute;
@@ -447,7 +460,7 @@ header {
     color: #13253B;
     opacity: 1;
 }
-.pricing-undertext {
+.pricing-under-text {
     font: normal normal bold 12px/1px Raleway;
     letter-spacing: 0;
     color: #13253B;
@@ -463,19 +476,114 @@ header {
     color: #55DFB4;
 }
 
+/* Last Section */
+
+.form {
+    width: 896px;
+    height: 376px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-text {
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+}
+.form-text h1 {
+    font: normal normal normal 49px/57px Raleway;
+    color: #000000;
+    opacity: 1;
+}
+.form-text > p {
+    font: normal normal normal 16px/22px Open Sans;
+    color: #000000;
+    opacity: 1;
+    margin: 22px 0 42px 0;
+}
+.contact-details {
+    display: flex;
+}
+.contact {
+    font: normal normal 600 16px/22px Open Sans;
+    color: #A5A5A5;
+    opacity: 1;
+    position: relative;
+}
+.contact-form {
+    width: 440px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    margin: 0 20px 0 10px;
+}
+.contact-text {
+    font: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    opacity: 1;
+    text-transform: uppercase;
+}
+.contact-form-input {
+    height: 40px;
+    width: 440px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+    opacity: 1;
+    margin-bottom: 42px;
+}
+
+/* checkbox */
+.contact-form-checkbox{
+    width: 0;
+    height: 0;
+}
+.contact-form-checkbox-label {
+    position: relative;
+}
+.contact-form-checkbox-label-text {
+    font: normal normal normal 12px/17px Open Sans;
+    color: #707070;
+    opacity: 1;
+    margin-left: 30px;
+}
+.contact-form-checkbox::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    position: absolute;
+}
 
 
 
+/* form button */
+
+.form-button {
+    font: normal normal bold 13px/18px Open Sans;
+    color: #FFFFFF;
+    outline: none;
+    background-color: #08A6E4;
+    border: none;
+    border-radius: 35px;
+    padding: 20px 97px;
+    align-self: flex-end;
+}
 
 
-
-
-
-
+/* Last Section End */
 /* Footer */
+
 footer {
-    background: #F7F7F7 0% 0% no-repeat padding-box;
-    box-shadow: 0px -5px 40px #00000029;
+    background: #F7F7F7 0 0 no-repeat padding-box;
+    box-shadow: 0 -5px 40px #00000029;
     opacity: 1;
 }
 footer .container {
@@ -486,13 +594,11 @@ footer .container {
 }
 .footer-title {
     font: normal normal 300 26px/30px Raleway;
-    letter-spacing: 0px;
     color: #08A6E4;
     opacity: 1;
 }
 .footer-text {
     font: normal normal normal 11px/15px Open Sans;
-    letter-spacing: 0px;
     color: #A5A5A5;
     opacity: 1;
 }
